@@ -91,8 +91,7 @@ void variableDeclarations()
     
     
     ignoreUnused(number, age, height, isOn, isGreen, isMetal, bar, phase, volume, dValue1, dValue2, dValue3, cValue1, cValue2, cValue3); //passing each variable declared to the ignoreUnused() function
-}
-void 
+} 
 /*
  10 functions
  example:
@@ -100,103 +99,92 @@ void
 bool rentACar(int rentalDuration, int carType = 0)  //function declaration with random number of arguments, arbitrary number of arguments have default value
 { 
     ignoreUnused(rentalDuration, carType); //passing each function parameter to the ignoreUnused() function
-    return{}; //if your function returns something other than void, add 'return {};' at the end of it.
-} 
-
+    return {}; //if your function returns something other than voi'return {};' at the end of it.} 
+}
 /*
  1)
  */
 bool playRecord(int recordName, int recordGenre = 0)
-
 {
-  ignoreUnused(recordName, recordGenre);
+    ignoreUnused(recordName, recordGenre);
 
-  return{};
+    return{};
 
 }
 /*
  2)
  */
 void nameTrack(int artist, int genre, int tempo, int date)
-
 {
-  ignoreUnused(artist, genre, tempo, date);
-
+    ignoreUnused(artist, genre, tempo, date);
 }
 /*
  3)
  */
 void run(int speed, int distance)
-{
-  ignoreUnused(speed, distance);
-
+{    
+    ignoreUnused(speed, distance);
 }
 /*
  4)
  */
-void createButton(int positionX, int positionY int height int length)
+float createButton(int positionX, int positionY, int height, int length)
 {
-  ignoreUnused(positionX, positionY, height, length);
-
+    ignoreUnused(positionX, positionY, height, length);
+    
+    return{};
 }
 /*
  5)
  */
 int displaySprite(int positionX, int positionY, int spriteType)
 {
-
-  ignoreUnused(positionX, positionY, spriteType);
+    ignoreUnused(positionX, positionY, spriteType);
   
-  return{};
-
+    return {};
 }
 /*
  6)
  */
 float chooseVolume(int roomNumber, float averageVolume)
-
 {
-  ignoreUnused(roomNumber, averageVolume);
+    ignoreUnused(roomNumber, averageVolume);
 
-  return{};
+    return{};
 }
 /*
  7)
  */
 float walkDog(bool yes, float distance)
-
 {
-  ignoreUnused(yes, distance);
+    ignoreUnused(yes, distance);
 
-  return{};
+    return{};
 }
 /*
  8)
  */
 double createRemix(int track1, int track2, float finishedTempo)
 {
-  ignoreUnused(track1, track2, finishedTempo);
+    ignoreUnused(track1, track2, finishedTempo);
 
-  return{};
+    return{};
 }
 /*
  9)
  */
 void chooseJacket(int wheatherType, float exactTemprature)
-
 {
-  ignoreUnused(wheatherType, exactTemprature);
-
+    ignoreUnused(wheatherType, exactTemprature);
 }
 /*
  10)
  */
 int doPushups(int numPushups, int speed, bool withWeights)
-
 {
-  ignoreUnused(numPushups, speed, withWeights);
+    ignoreUnused(numPushups, speed, withWeights);
 
-  return{};
+    return{};
 }
 int main()
 {
@@ -210,11 +198,11 @@ int main()
     //3)
     auto sprite = displaySprite(1, 2, 3);
     //4)
-    auto button = createButton(1, 1);
+    auto button = createButton(1,1,2,3);
     //5)
-    auto runningNow = run(12, 9);
+    run(12, 9);
     //6)
-    auto jacket = chooseJacket(9, 12.5);
+    chooseJacket(9, 12.5);
     //7)
     auto speakerVolume = chooseVolume(2, 2.5);
     //8)
@@ -224,7 +212,7 @@ int main()
     //10)
     
     
-    ignoreUnused(carRented, donePushups, playingRecord, sprite, button, runningNow, jacket, speakerVolume, dogWalked, remix);
+    ignoreUnused(carRented, donePushups, playingRecord, sprite, button, speakerVolume, dogWalked, remix);
     std::cout << "good to go!" << std::endl;
     return 0;    
 }
