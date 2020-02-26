@@ -173,16 +173,16 @@ double createRemix(int track1, int track2, float finishedTempo)
 /*
  9)
  */
-void chooseJacket(int wheatherType, float exactTemprature)
+void chooseJacket(int wheatherType, float exactTemprature, int colourNo = 5)
 {
-    ignoreUnused(wheatherType, exactTemprature);
+    ignoreUnused(wheatherType, exactTemprature, colourNo);
 }
 /*
  10)
  */
-int doPushups(int numPushups, int speed, bool withWeights)
+int doPushups(int numPushups, int speed, bool withWeights, int kgs = 50)
 {
-    ignoreUnused(numPushups, speed, withWeights);
+    ignoreUnused(numPushups, speed, withWeights, kgs);
 
     return{};
 }
